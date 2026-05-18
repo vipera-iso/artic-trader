@@ -203,12 +203,14 @@ async def verify_signature(
 
     # Refresh token = long-lived JWT in httpOnly cookie. Rotate on every use.
     refresh_token = service.create_jwt(user.id)
+    # SameSite=None required for cross-origin Vercel→Render cookie flow.
+    # secure=True is mandatory when SameSite=None per spec.
     response.set_cookie(
         key="refresh_token",
         value=refresh_token,
         httponly=True,
         secure=True,
-        samesite="lax",
+        samesite="none",
         max_age=60 * 60 * 24 * 30,
     )
 
