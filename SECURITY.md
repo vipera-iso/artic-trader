@@ -2,7 +2,7 @@
 
 ## Scope
 
-Artic handles sensitive material: exchange API keys, private keys for on-chain transactions, JWT secrets, and database credentials. Security issues in this project can directly result in financial loss for users. Please take disclosures seriously.
+Artic handles sensitive material: exchange API keys, private keys for on-chain transactions, JWT secrets, and database credentials. Security issues in this project can directly result in financial loss, account takeover, or unauthorised trading.
 
 ### In-scope
 
@@ -38,7 +38,7 @@ Artic handles sensitive material: exchange API keys, private keys for on-chain t
 
 **Do not open a public GitHub issue for security vulnerabilities.**
 
-Report via email: **security@silonelabs.com**
+Report via email: **sounak.dey2468@gmail.com**
 
 Include:
 - Description of the vulnerability
@@ -57,6 +57,17 @@ Include:
 | Public disclosure | After fix is released and users have time to update |
 
 We follow coordinated disclosure. If you have a hard deadline, let us know in the report.
+
+---
+
+## Bug Bounty Reward Guidelines (USD)
+
+Rewards are discretionary and based on impact, exploitability, and report quality.
+
+- **Low:** $50–$150
+- **Medium:** $200–$500
+- **High:** $750–$2,000
+- **Critical:** $3,000–$10,000
 
 ---
 
